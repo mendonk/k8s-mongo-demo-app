@@ -10,15 +10,19 @@ You just need minikube to run this. The examples assume you're using `alias kube
 Clone repo, change directory into the clone, and run it:
 
 1. Apply secrets
+2. 
 kubectl apply -f mongo-secret.yaml
 
 2. Apply mongo-db as internal pod 
+
 kubectl apply -f mongo.yaml
 
 3. Apply configmap so mongo express (external) can talk to mongo-db (internal)
+
 kubectl apply -f mongo-configmap.yaml
 
 4. Apply mongo express with external loadbalancer
+
 kubectl apply -f mongo-express.yaml
 
 If you run it on minikube you should get an output as below, and you can access Mongo Express at the listed LoadBalancer URL. 
