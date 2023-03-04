@@ -10,7 +10,7 @@ You just need minikube to run this. The examples assume you're using `alias kube
 Clone repo, change directory into the clone, and run it:
 
 1. Apply secrets
-2. 
+
 kubectl apply -f mongo-secret.yaml
 
 2. Apply mongo-db as internal pod 
